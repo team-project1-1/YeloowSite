@@ -5,10 +5,11 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
+  padding-top: 0;
   text-align: center;
-  background-color:  #f8f9fa !important;
+  background-color: white;
 }
+
 /*   header anna */
 .flex {
   display: flex; 
@@ -16,22 +17,37 @@ body {
   justify-content: space-between;
 }
 
-.containerr{
-  width: 1000px;
+.containerr {
+  max-width: 1000px;
+  width: 100%;
   margin: 0 auto;
-  text-align: center;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
-nav {
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.main-nav {
   list-style: none;
+  display: flex;
+  justify-content: center; 
+  gap: 2rem;
+  padding: 1rem 0;
+  position: sticky
 }
 
 ul li {
-  position:relative;
+  padding: 1rem 0;
+  position: sticky;
   display: inline;
   margin-left: 10px;
   margin-right: 10px;
-  left:20%;
 }
 
 a {
@@ -40,38 +56,59 @@ a {
 }
 
 .masthead{
-  margin: 210px 0 0 0;
+  margin: 300px 0 0 0;
   text-align: center;
+}
+
+.header {
+  text-align: center;
+  justify-content: center;
+  
 }
 
 .welcome{
   position:relative;
   font-family: "Montserrat", sans-serif;
-  font-size: 40px;
+  font-size: 30px;
   color: white;
    font-style: italic;
-  top:-100px;
+  margin-top: -80px;
 }
 
-.nice-to-meet{
-  position:relative;
+.nice-to-meet {
+  position: relative;
   text-align: center;
-  font-family: "Montserrat";
-  font-size: 40px;
-  color: #f4f4f4;
-  top:-150px;
-  left:35%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 70px;
+  color: #ffffff;
+  margin-top: 50px; 
 }
+
+.nice-to-meet p {
+  color: white;
+  font-size: 70px;
+  font-weight: bold;
+  text-align: center;
+  margin: 50px; 
+}
+
 
 .button{
   background-color: #FFD700;
-    color: white; 
-    font-weight: bold; 
-    font-size: 18px;  
-    padding: 18px;
-    border: none; 
-    border-radius: 10px;
-    text-align: center; 
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  margin-top: 20px; 
 }
 
 .must-head{
@@ -79,22 +116,31 @@ a {
 }
 
 .bodykz{
-  height: 770px;
+  min-height: 80vh;
   background-image: url(https://learn.seytech.co/assets/projects/html-css/projects/1-agency/assets/img/header-bg.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
-  background-color:rgb(0,0,0,0.7);
+  background-position: center;
   font-size: 20px;
+
 }
-  
 
 .mindal {
-  position:relative;
-  color: orange;
-  font-size: 25px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  color: #FFD700;
+  font-size: 24px;
+  font-weight: bold;
   justify-content: space-between;
-  left:-15%;
+  margin-top: 1.5%;
+  left:-25%;
 }
+
+.mindal a {
+  color: #FFD700;
+}
+
 
 .nav-itm a{ 
   color: white;
@@ -106,10 +152,11 @@ a {
     top:30px;
   }
   #services h1 { 
-    position:relative;
+  position:relative;
   text-align: center; 
-  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
-    top:-20px;
+  font-family: "Roboto Slab", "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
+  margin-top: -3%;
+  font-size: 30px;
 } 
 
 .services p { 
@@ -117,31 +164,42 @@ a {
   text-align: center; 
   color: grey; 
   font-family:'Times New Roman', Times, serif; 
-  top:-10px;
 } 
   .icons-first{
+    margin-top: 50%;
     margin:10px;
   }
-  .responsive-design{
+  .icons-second{
     margin:10px;
   }
-  .web-s{
+  .icons-third{
     margin:10px;
   }
- .e-commerce, responsive-design, web-s {
-  color: rgb(209, 167, 17);
+.e-commerce, .responsive-design, .web-s {
+  margin:10px;
+  color: #000000;
   }
-#ic-1, #ic-2, #ic-3 {
-  color: rgb(209, 167, 17);
-}
+
 .center {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  justify-content: center; 
+  gap: 50px; 
+  padding: 30px 10px;
+  margin: 10px;
+  flex-wrap: wrap; 
   text-align: center;
-  padding:30px 10px;
-  margin:-30px;
 }
+
+.icons-first,
+.icons-second,
+.icons-third {
+  max-width: 300px; 
+  flex: 1 1 250px; 
+  box-sizing: border-box;
+  color: #FFD700;
+}
+
+
   p{
     margin:15px;
     text-align: center;
@@ -150,69 +208,83 @@ a {
   
   
 /*   ardana section */
-  #portfolio {
-    position: relative;
+.portfolio {
+  position: relative;
   padding: 20px;
-    top: 70px ;
+  top: 70px;
 }
 
-#portfolio h1 {
+.portfolio-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.portfolio h1 {
   font-size: 2.5em;
   margin-bottom: 20px;
 }
 
-#portfolio p {
+.portfolio p {
   color: #6c757d;
   margin-bottom: 20px;
   font-family: 'Times New Roman', Times, serif;
-  font-size: 20px; 
+  font-size: 20px;
+  margin-bottom: 5%;
 }
 
 .portfolio-grid {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 90px;
+  gap: 20px;
 }
 
 .portfolio-item {
   position: relative;
-  width: 400px;
-  height: 500px;
+  flex: 1 1 calc(33.333% - 40px);
+  max-width: 400px;
   display: block;
   overflow: hidden;
-  margin-top: 5%;
 }
 
-.portfolio-item img {
-    width: 100%;
-    height: auto;
-    display: block;
+
+.img-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 4 / 3;
 }
 
-.portfolio-item .overlay {
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.img-wrapper .overlay {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  height: 300px;
-  background-color: rgba(255, 223, 0, 0.8);
+  background-color: #FFD700;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   opacity: 0;
-  transition: opacity 0.2s ease;
+  transition: 0.3s ease-in-out;
 }
 
-.portfolio-item:hover .overlay {
+.img-wrapper:hover .overlay {
   opacity: 1;
 }
 
-.portfolio-item .overlay span {
-  font-size: 8em;
+.overlay span {
+  font-size: 80px;
   color: white;
-  border-radius: 10%;
-  padding: 10px;
+  font-weight: bold;
 }
 
 .portfolio-item h2 {
@@ -225,6 +297,7 @@ a {
 .portfolio-item p {
   color: #6c757d;
 }
+
 /* section Dayana */
 #team {
     position: inherit;
