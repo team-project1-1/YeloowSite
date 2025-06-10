@@ -226,117 +226,113 @@ a {
   color: #6c757d;
 }
 /* section Dayana */
-#team{
+#team {
     position: inherit;
     display: inline-block;
     margin: 8%;
-    padding: 0;
-    gap: 20px;
     padding: 20px;
-
-}
-.container{
-  position:relative;
-    margin: 0;
-    padding: 20px;
-}
-.team-member{
-    position: relative;
-    top: -80px;
-}
-#teamtwo{
+  }
+  
+  .container {
+    margin-top: 5%;
+    text-align: center;
+  }
+  
+  #teamtwo {
     position: relative;
     display: flex;
     justify-content: center;
-    flex-direction: row; 
-    left: 10%;
-    margin: -5%;
-
-}
-.headone{
-    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 30px;
+  }
+  
+  .headone {
     font-size: 250%;
     color: black;
     text-align: center;
-    font-family:sans-serif;
-    top: -190px;
-}
-.textafter{
-    position: relative;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  .textafter {
     font-size: medium;
     color: grey;
     text-align: center;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-transform:lowercase;
-    top: -180px;
-}
-.imgg{
-    position: relative;
-    width: 60%;
-    height: 60%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: lowercase;
+    margin-bottom: 40px;
+  }
+  
+  
+  .imgg {
+    width: 100%;
+    height: auto;
     border-radius: 50%;
-    left: -35%;
     border: 7px rgb(199, 197, 197) solid;
-    top: 80px;
-}
-h4{
-    position: relative;
-    text-align: center;
-    color: black;
-    font-family:sans-serif;
+    margin-bottom: 15px;
+  }
+  
+  h4 {
+    color: rgb(0, 0, 0);
+    font-family: sans-serif;
     font-size: 150%;
-    left: -35%;
-  top: 90px;
-
-}
-.hertext{
-    position: relative;
-    display: block;
-    text-align: center;
+    margin: 10px 0 5px;
+  }
+  
+  .hertext {
     color: grey;
-    font-family:sans-serif;
+    font-family: sans-serif;
     font-size: 100%;
-    left: -35%;
-    top: 90px;
-}
-
-.textend{
+    margin-bottom: 15px;
+  }
+  
+  .team-member {
     position: relative;
+    text-align: center;
+    margin: 20px;
+    width: 260px; /* фиксированная ширина, чтобы влезли 3 иконки */
+  }
+  
+  .social-links {
+    margin-top: 10px;
+    display: flex;               /* размещаем в ряд */
+    justify-content: center;     /* по центру */
+    gap: 10px;                   /* расстояние между иконками */
+    flex-wrap: nowrap;           /* запрет переноса */
+  }
+  
+  .social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    background-color: #555;
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    background-color: #000;
+  }
+  
+  .textend {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     font-size: large;
     color: grey;
     text-align: center;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    top: 80px;
-    border: 10px;
-
-}
-
-.social-links{
-    margin-top: 70px;
-}
-  
-.social-links a {
-    position: relative;
-    margin: 10px;
-    background-color: #555;
-    border: 10px #555;
-    color: white;
-    padding: 13px 16px;
-    border-radius: 55%;
-text-decoration: none;
-left: -35%;
-  top: 50px ;
-}
-  .fab fa-facebook-f{
-    position:relative;
-    padding:15px 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 60px;
+    padding: 20px;
   }
-
-.social-links a:hover {
-    background-color: #000;
-}
+  
 /* Nika footer */
 .images{
     display: flex;
